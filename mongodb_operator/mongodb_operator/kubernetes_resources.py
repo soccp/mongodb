@@ -139,7 +139,7 @@ def get_statefulset_object(cluster_object):
             'mongod',
             '--auth',
             '--replSet', name,
-            '--sslMode', 'requireSSL',
+#            '--sslMode', 'requireSSL',
             '--clusterAuthMode', 'x509',
             '--sslPEMKeyFile', '/etc/ssl/mongod/mongod.pem',
             '--sslCAFile', '/etc/ssl/mongod/ca.pem',
